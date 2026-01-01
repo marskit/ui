@@ -1,0 +1,55 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          # This executes the release command defined in package.json (usually changeset publish)
+          publish: npm run release
+          # This updates versions and changelogs, then commits back to main
+          version: npx changeset version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # NPM_TOKEN is needed if publishing to NPM registry.
+          # For now, we assume GITHUB_TOKEN is enough for GitHub Packages or just tagging.
+          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Sync Back to Tokens Branch
+        if: steps.changesets.outputs.published == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --title "chore: sync release updates to tokens" \
+            --body "Back-syncing version bumps and changelogs from main after release." \
+            --base tokens \
+            --head main || echo "PR creation failed (possibly already exists)"

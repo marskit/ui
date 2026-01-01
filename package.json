@@ -2,9 +2,12 @@
   "name": "@mars-ui/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "release": "changeset publish"
+  },
   "private": true,
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@eslint/js": "^9.8.0",
     "@nx/devkit": "^22.3.3",
     "@nx/eslint": "22.3.3",
