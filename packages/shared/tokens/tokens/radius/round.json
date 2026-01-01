@@ -1,0 +1,160 @@
+{
+  "Radius": {
+    "radius_4xl": {
+      "value": 18,
+      "type": "number"
+    },
+    "radius_xl": {
+      "value": 12,
+      "type": "number"
+    },
+    "radius_lg": {
+      "value": 10,
+      "type": "number"
+    },
+    "radius_md": {
+      "value": 8,
+      "type": "number"
+    },
+    "radius_sm": {
+      "value": 6,
+      "type": "number"
+    },
+    "radius_15xl": {
+      "value": 64,
+      "type": "number"
+    },
+    "radius_8xl": {
+      "value": 28,
+      "type": "number"
+    },
+    "radius_9xl": {
+      "value": 32,
+      "type": "number"
+    },
+    "radius_round": {
+      "value": 1000,
+      "type": "number"
+    },
+    "radius_14xl": {
+      "value": 56,
+      "type": "number"
+    },
+    "radius_12xl": {
+      "value": 48,
+      "type": "number"
+    },
+    "radius_3xl": {
+      "value": 16,
+      "type": "number"
+    },
+    "radius_xxs": {
+      "value": 2,
+      "type": "number"
+    },
+    "radius_10xl": {
+      "value": 40,
+      "type": "number"
+    },
+    "radius_0": {
+      "value": 0,
+      "type": "number"
+    },
+    "radius_5xl": {
+      "value": 20,
+      "type": "number"
+    },
+    "radius_xs": {
+      "value": 4,
+      "type": "number"
+    },
+    "radius_7xl": {
+      "value": 24,
+      "type": "number"
+    },
+    "component": {
+      "radius_xs": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_sm": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_md": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_lg": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_2xl": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_4xl": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_5xl": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_6xl": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_xxs": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_xl": {
+        "value": 1000,
+        "type": "number"
+      },
+      "radius_3xl": {
+        "value": 1000,
+        "type": "number"
+      }
+    },
+    "radius_2xl": {
+      "value": 14,
+      "type": "number"
+    },
+    "radius_6xl": {
+      "value": 22,
+      "type": "number"
+    },
+    "radius_16xl": {
+      "value": 72,
+      "type": "number"
+    },
+    "radius_13xl": {
+      "value": 52,
+      "type": "number"
+    },
+    "radius_11xl": {
+      "value": 44,
+      "type": "number"
+    },
+    "big_component": {
+      "radius_sm": {
+        "value": 20,
+        "type": "number"
+      },
+      "radius_md": {
+        "value": 24,
+        "type": "number"
+      },
+      "radius_xs": {
+        "value": 16,
+        "type": "number"
+      },
+      "radius_lg": {
+        "value": 28,
+        "type": "number"
+      }
+    }
+  }
+}

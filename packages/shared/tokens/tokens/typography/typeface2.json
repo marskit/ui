@@ -1,0 +1,242 @@
+{
+  "Typeface": {
+    "family": {
+      "🔵 display": {
+        "value": "{display_font_2}",
+        "type": "text"
+      },
+      "🟢 body": {
+        "value": "{body_ font_ 2}",
+        "type": "text"
+      }
+    },
+    "size": {
+      "display_3": {
+        "value": "{Font.size_web.display_3}",
+        "type": "number"
+      },
+      "display_2": {
+        "value": "{Font.size_web.display_2}",
+        "type": "number"
+      },
+      "display_1": {
+        "value": "{Font.size_web.display_1}",
+        "type": "number"
+      },
+      "heading_6": {
+        "value": "{Font.size_web.heading_6}",
+        "type": "number"
+      },
+      "heading_5": {
+        "value": "{Font.size_web.heading_5}",
+        "type": "number"
+      },
+      "heading_4": {
+        "value": "{Font.size_web.heading_4}",
+        "type": "number"
+      },
+      "heading_3": {
+        "value": "{Font.size_web.heading_3}",
+        "type": "number"
+      },
+      "heading_2": {
+        "value": "{Font.size_web.heading_2}",
+        "type": "number"
+      },
+      "heading_1": {
+        "value": "{Font.size_web.heading_1}",
+        "type": "number"
+      },
+      "title_2": {
+        "value": "{Font.size_web.title_2}",
+        "type": "number"
+      },
+      "title_1": {
+        "value": "{Font.size_web.title_1}",
+        "type": "number"
+      },
+      "body_2": {
+        "value": "{Font.size_web.body_2}",
+        "type": "number"
+      },
+      "body_1": {
+        "value": "{Font.size_web.body_1}",
+        "type": "number"
+      },
+      "caption_2": {
+        "value": "{Font.size_web.caption_2}",
+        "type": "number"
+      },
+      "caption_1": {
+        "value": "{Font.size_web.caption_1}",
+        "type": "number"
+      },
+      "overline": {
+        "value": "{Font.size_web.overline}",
+        "type": "number"
+      },
+      "deck_heading_2": {
+        "value": "{Font.size_web.deck_heading_2}",
+        "type": "number"
+      },
+      "deck_heading_3": {
+        "value": "{Font.size_web.deck_heading_3}",
+        "type": "number"
+      },
+      "deck_heading_4": {
+        "value": "{Font.size_web.deck_heading_4}",
+        "type": "number"
+      },
+      "deck_heading_1": {
+        "value": "{Font.size_web.deck_heading_1}",
+        "type": "number"
+      }
+    },
+    "line_height": {
+      "display_3": {
+        "value": "{Font.line_height_web.display_3}",
+        "type": "number"
+      },
+      "display_2": {
+        "value": "{Font.line_height_web.display_2}",
+        "type": "number"
+      },
+      "display_1": {
+        "value": "{Font.line_height_web.display_1}",
+        "type": "number"
+      },
+      "heading_6": {
+        "value": "{Font.line_height_web.heading_6}",
+        "type": "number"
+      },
+      "heading_5": {
+        "value": "{Font.line_height_web.heading_5}",
+        "type": "number"
+      },
+      "heading_4": {
+        "value": "{Font.line_height_web.heading_4}",
+        "type": "number"
+      },
+      "heading_3": {
+        "value": "{Font.line_height_web.heading_3}",
+        "type": "number"
+      },
+      "heading_2": {
+        "value": "{Font.line_height_web.heading_2}",
+        "type": "number"
+      },
+      "heading_1": {
+        "value": "{Font.line_height_web.heading_1}",
+        "type": "number"
+      },
+      "title_2": {
+        "value": "{Font.line_height_web.title_2}",
+        "type": "number"
+      },
+      "title_1": {
+        "value": "{Font.line_height_web.title_1}",
+        "type": "number"
+      },
+      "body_2": {
+        "value": "{Font.line_height_web.body_2}",
+        "type": "number"
+      },
+      "body_1": {
+        "value": "{Font.line_height_web.body_1}",
+        "type": "number"
+      },
+      "caption_2": {
+        "value": "{Font.line_height_web.caption_2}",
+        "type": "number"
+      },
+      "caption_1": {
+        "value": "{Font.line_height_web.caption_1}",
+        "type": "number"
+      },
+      "overline": {
+        "value": "{Font.line_height_web.overline}",
+        "type": "number"
+      },
+      "para": {
+        "value": "{Font.line_height_web.para}",
+        "type": "number"
+      },
+      "deck_heading_2": {
+        "value": "{Font.line_height_web.deck_heading_2}",
+        "type": "number"
+      },
+      "deck_heading_3": {
+        "value": "{Font.line_height_web.deck_heading_3}",
+        "type": "number"
+      },
+      "deck_heading_4": {
+        "value": "{Font.line_height_web.deck_heading_4}",
+        "type": "number"
+      },
+      "deck_heading_1": {
+        "value": "{Font.line_height_web.deck_heading_1}",
+        "type": "number"
+      }
+    },
+    "letter_spacing": {
+      "none": {
+        "value": "{Font.letter_spacing.none}",
+        "type": "number"
+      },
+      "xs": {
+        "value": "{Font.letter_spacing.xs}",
+        "type": "number"
+      },
+      "sm": {
+        "value": "{Font.letter_spacing.sm}",
+        "type": "number"
+      },
+      "md": {
+        "value": "{Font.letter_spacing.md}",
+        "type": "number"
+      },
+      "lg": {
+        "value": "{Font.letter_spacing.lg}",
+        "type": "number"
+      }
+    },
+    "weight": {
+      "display": {
+        "normal": {
+          "value": "{Font.display_weight.normal}",
+          "type": "number"
+        },
+        "medium": {
+          "value": "{Font.display_weight.medium}",
+          "type": "number"
+        },
+        "semibold": {
+          "value": "{Font.display_weight.semibold}",
+          "type": "number"
+        },
+        "bold": {
+          "value": "{Font.display_weight.bold}",
+          "type": "number"
+        }
+      },
+      "body": {
+        "normal": {
+          "value": "{Font.body_weight.normal}",
+          "type": "number"
+        },
+        "medium": {
+          "value": "{Font.body_weight.medium}",
+          "type": "number"
+        },
+        "semibold": {
+          "value": "{Font.body_weight.semibold}",
+          "type": "number"
+        },
+        "bold": {
+          "value": "{Font.body_weight.bold}",
+          "type": "number"
+        }
+      }
+    }
+  }
+}

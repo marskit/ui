@@ -1,0 +1,132 @@
+{
+  "Space": {
+    "zero": {
+      "value": 0,
+      "type": "number"
+    },
+    "xxs": {
+      "value": 2,
+      "type": "number"
+    },
+    "xs": {
+      "value": 4,
+      "type": "number"
+    },
+    "sm": {
+      "value": 6,
+      "type": "number"
+    },
+    "md": {
+      "value": 8,
+      "type": "number"
+    },
+    "lg": {
+      "value": 10,
+      "type": "number"
+    },
+    "xl": {
+      "value": 12,
+      "type": "number"
+    },
+    "2xl": {
+      "value": 14,
+      "type": "number"
+    },
+    "3xl": {
+      "value": 16,
+      "type": "number"
+    },
+    "4xl": {
+      "value": 18,
+      "type": "number"
+    },
+    "5xl": {
+      "value": 20,
+      "type": "number"
+    },
+    "7xl": {
+      "value": 24,
+      "type": "number"
+    },
+    "9xl": {
+      "value": 28,
+      "type": "number"
+    },
+    "10xl": {
+      "value": 32,
+      "type": "number"
+    },
+    "11xl": {
+      "value": 36,
+      "type": "number"
+    },
+    "12xl": {
+      "value": 40,
+      "type": "number"
+    },
+    "14xl": {
+      "value": 48,
+      "type": "number"
+    },
+    "16xl": {
+      "value": 56,
+      "type": "number"
+    },
+    "6xl": {
+      "value": 22,
+      "type": "number"
+    },
+    "8xl": {
+      "value": 26,
+      "type": "number"
+    },
+    "18xl": {
+      "value": 64,
+      "type": "number"
+    },
+    "15xl": {
+      "value": 52,
+      "type": "number"
+    },
+    "19xl": {
+      "value": 72,
+      "type": "number"
+    },
+    "20xl": {
+      "value": 80,
+      "type": "number"
+    },
+    "17xl": {
+      "value": 60,
+      "type": "number"
+    },
+    "21xl": {
+      "value": 88,
+      "type": "number"
+    },
+    "13xl": {
+      "value": 44,
+      "type": "number"
+    },
+    "23xl": {
+      "value": 104,
+      "type": "number"
+    },
+    "24xl": {
+      "value": 120,
+      "type": "number"
+    },
+    "22xl": {
+      "value": 96,
+      "type": "number"
+    },
+    "25xl": {
+      "value": 144,
+      "type": "number"
+    },
+    "26xl": {
+      "value": 160,
+      "type": "number"
+    }
+  }
+}
