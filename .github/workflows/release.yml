@@ -42,14 +42,3 @@ jobs:
           # NPM_TOKEN is needed if publishing to NPM registry.
           # For now, we assume GITHUB_TOKEN is enough for GitHub Packages or just tagging.
           # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Sync Back to Tokens Branch
-        if: steps.changesets.outputs.published == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh pr create \
-            --title "chore: sync release updates to tokens" \
-            --body "Back-syncing version bumps and changelogs from main after release." \
-            --base tokens \
-            --head main || echo "PR creation failed (possibly already exists)"

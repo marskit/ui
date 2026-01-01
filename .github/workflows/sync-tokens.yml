@@ -1,0 +1,28 @@
+name: Sync Main to Tokens
+
+on:
+    push:
+        branches:
+            - main
+
+permissions:
+    contents: read
+    pull-requests: write
+
+jobs:
+    sync-tokens:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v4
+
+            - name: Create Sync PR
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  gh pr create \
+                    --title "chore: sync main to tokens" \
+                    --body "Automated PR to sync changes from \`main\` back to \`tokens\` branch." \
+                    --base tokens \
+                    --head main \
+                    || echo "PR creation failed (likely already exists or no changes)"
