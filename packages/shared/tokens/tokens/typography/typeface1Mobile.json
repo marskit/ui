@@ -1,0 +1,242 @@
+{
+  "Typeface": {
+    "family": {
+      "🔵 display": {
+        "value": "{display_font_1}",
+        "type": "text"
+      },
+      "🟢 body": {
+        "value": "{body_font_1}",
+        "type": "text"
+      }
+    },
+    "size": {
+      "display_3": {
+        "value": 44,
+        "type": "number"
+      },
+      "display_2": {
+        "value": 44,
+        "type": "number"
+      },
+      "display_1": {
+        "value": 44,
+        "type": "number"
+      },
+      "heading_6": {
+        "value": 40,
+        "type": "number"
+      },
+      "heading_5": {
+        "value": 36,
+        "type": "number"
+      },
+      "heading_4": {
+        "value": 30,
+        "type": "number"
+      },
+      "heading_3": {
+        "value": 26,
+        "type": "number"
+      },
+      "heading_2": {
+        "value": 22,
+        "type": "number"
+      },
+      "heading_1": {
+        "value": 20,
+        "type": "number"
+      },
+      "title_2": {
+        "value": 17,
+        "type": "number"
+      },
+      "title_1": {
+        "value": 17,
+        "type": "number"
+      },
+      "body_2": {
+        "value": 17,
+        "type": "number"
+      },
+      "body_1": {
+        "value": 15,
+        "type": "number"
+      },
+      "caption_2": {
+        "value": 14,
+        "type": "number"
+      },
+      "caption_1": {
+        "value": 12,
+        "type": "number"
+      },
+      "overline": {
+        "value": 12,
+        "type": "number"
+      },
+      "deck_heading_2": {
+        "value": 120,
+        "type": "number"
+      },
+      "deck_heading_3": {
+        "value": 144,
+        "type": "number"
+      },
+      "deck_heading_4": {
+        "value": 200,
+        "type": "number"
+      },
+      "deck_heading_1": {
+        "value": 96,
+        "type": "number"
+      }
+    },
+    "line_height": {
+      "display_3": {
+        "value": 48,
+        "type": "number"
+      },
+      "display_2": {
+        "value": 48,
+        "type": "number"
+      },
+      "display_1": {
+        "value": 48,
+        "type": "number"
+      },
+      "heading_6": {
+        "value": 44,
+        "type": "number"
+      },
+      "heading_5": {
+        "value": 44,
+        "type": "number"
+      },
+      "heading_4": {
+        "value": 40,
+        "type": "number"
+      },
+      "heading_3": {
+        "value": 32,
+        "type": "number"
+      },
+      "heading_2": {
+        "value": 28,
+        "type": "number"
+      },
+      "heading_1": {
+        "value": 28,
+        "type": "number"
+      },
+      "title_2": {
+        "value": 24,
+        "type": "number"
+      },
+      "title_1": {
+        "value": 24,
+        "type": "number"
+      },
+      "body_2": {
+        "value": 24,
+        "type": "number"
+      },
+      "body_1": {
+        "value": 20,
+        "type": "number"
+      },
+      "caption_2": {
+        "value": 20,
+        "type": "number"
+      },
+      "caption_1": {
+        "value": 16,
+        "type": "number"
+      },
+      "overline": {
+        "value": 16,
+        "type": "number"
+      },
+      "para": {
+        "value": 20,
+        "type": "number"
+      },
+      "deck_heading_2": {
+        "value": 136,
+        "type": "number"
+      },
+      "deck_heading_3": {
+        "value": 160,
+        "type": "number"
+      },
+      "deck_heading_4": {
+        "value": 216,
+        "type": "number"
+      },
+      "deck_heading_1": {
+        "value": 104,
+        "type": "number"
+      }
+    },
+    "letter_spacing": {
+      "none": {
+        "value": "{Font.letter_spacing.none}",
+        "type": "number"
+      },
+      "xs": {
+        "value": "{Font.letter_spacing.xs}",
+        "type": "number"
+      },
+      "sm": {
+        "value": "{Font.letter_spacing.sm}",
+        "type": "number"
+      },
+      "md": {
+        "value": "{Font.letter_spacing.md}",
+        "type": "number"
+      },
+      "lg": {
+        "value": "{Font.letter_spacing.lg}",
+        "type": "number"
+      }
+    },
+    "weight": {
+      "display": {
+        "normal": {
+          "value": "{Font.display_weight.normal}",
+          "type": "number"
+        },
+        "medium": {
+          "value": "{Font.display_weight.medium}",
+          "type": "number"
+        },
+        "semibold": {
+          "value": "{Font.display_weight.semibold}",
+          "type": "number"
+        },
+        "bold": {
+          "value": "{Font.display_weight.bold}",
+          "type": "number"
+        }
+      },
+      "body": {
+        "normal": {
+          "value": "{Font.body_weight.normal}",
+          "type": "number"
+        },
+        "medium": {
+          "value": "{Font.body_weight.medium}",
+          "type": "number"
+        },
+        "semibold": {
+          "value": "{Font.body_weight.semibold}",
+          "type": "number"
+        },
+        "bold": {
+          "value": "{Font.body_weight.bold}",
+          "type": "number"
+        }
+      }
+    }
+  }
+}

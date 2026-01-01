@@ -1,0 +1,21 @@
+{
+    "name": "@mars-ui/tokens",
+    "version": "1.0.0",
+    "description": "Design tokens for MarsUI",
+    "main": "index.ts",
+    "exports": {
+        "./css": "./build/css/_variables.css",
+        "./android/colors": "./build/android/colors.xml",
+        "./android/font-dimens": "./build/android/font_dimens.xml",
+        "./compose/colors": "./build/compose/StyleDictionaryColor.kt",
+        "./compose/size": "./build/compose/StyleDictionarySize.kt",
+        "./ios/colors": "./build/ios/StyleDictionaryColor.h",
+        "./ios-swift/*": "./build/ios-swift/*.swift"
+    },
+    "scripts": {
+        "build": "node build.js"
+    },
+    "devDependencies": {
+        "style-dictionary": "^3.9.2"
+    }
+}

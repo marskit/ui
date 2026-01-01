@@ -1,0 +1,110 @@
+{
+  "Brand": {
+    "MarsUI": {
+      "50": {
+        "value": "#f7f4fb",
+        "type": "color"
+      },
+      "100": {
+        "value": "#ece4f5",
+        "type": "color"
+      },
+      "200": {
+        "value": "#cebee6",
+        "type": "color"
+      },
+      "300": {
+        "value": "#b59cd8",
+        "type": "color"
+      },
+      "400": {
+        "value": "#9873c9",
+        "type": "color"
+      },
+      "500": {
+        "value": "#845abe",
+        "type": "color"
+      },
+      "600": {
+        "value": "#5f3993",
+        "type": "color"
+      },
+      "700": {
+        "value": "#472b6e",
+        "type": "color"
+      },
+      "800": {
+        "value": "#2f1d49",
+        "type": "color"
+      },
+      "900": {
+        "value": "#1f1331",
+        "type": "color"
+      },
+      "950": {
+        "value": "#170e25",
+        "type": "color"
+      },
+      "500_alpha_2": {
+        "value": "#845abe33",
+        "type": "color"
+      },
+      "500_alpha_3": {
+        "value": "#845abe3d",
+        "type": "color"
+      },
+      "500_alpha_4": {
+        "value": "#845abe66",
+        "type": "color"
+      },
+      "500_alpha_5": {
+        "value": "#845abe8f",
+        "type": "color"
+      },
+      "500_alpha_1": {
+        "value": "#845abe1f",
+        "type": "color"
+      },
+      "secondary_text_on_success": {
+        "value": "{Color.White.72}",
+        "type": "color"
+      },
+      "primary_text_on_success": {
+        "value": "{Color.White.100}",
+        "type": "color"
+      },
+      "secondary_text_on_primary": {
+        "value": "{Color.White.72}",
+        "type": "color"
+      },
+      "primary_text_on_primary": {
+        "value": "{Color.White.100}",
+        "type": "color"
+      },
+      "high_em": {
+        "value": "{Color.Gray.950}",
+        "type": "color"
+      },
+      "med_em": {
+        "value": "{Color.Gray.700}",
+        "type": "color"
+      },
+      "low_em": {
+        "value": "{Color.Gray.600}",
+        "type": "color"
+      },
+      "base_em": {
+        "value": "{Color.Gray.400}",
+        "type": "color"
+      },
+      "primary_text_on_primary_light": {
+        "value": "#5f3993",
+        "type": "color"
+      },
+      "secondary_text_on_primary_light": {
+        "value": "#7648b7",
+        "type": "color"
+      }
+    }
+  }
+}
