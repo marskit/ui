@@ -18,17 +18,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: "20"
-          cache: "npm"
+          bun-version: latest
 
       - name: Install Dependencies
-        run: npm ci
+        run: bun install --frozen-lockfile
 
       - name: Build Tokens
-        run: npm run build
+        run: bun run build
         working-directory: packages/shared/tokens
 
       - name: Check for Changes
@@ -50,7 +49,7 @@ jobs:
           git checkout -b $BRANCH_NAME
 
           # Add Changeset
-          npx changeset add --empty
+          bunx changeset add --empty
           # Manually create a changeset file because empty might not be what we want for "patch"
           # Better to create a specific changeset file
           echo "---
@@ -62,12 +61,12 @@ jobs:
 
           # Commit
           git add .
-          git commit -m "feat: update design tokens"
+          git commit -m "chore: update design tokens"
           git push origin $BRANCH_NAME
 
           # Create PR
           gh pr create \
-            --title "feat: update design tokens" \
+            --title "chore: update design tokens" \
             --body "This PR updates the design tokens based on changes in the `tokens` branch. A changeset has been added to trigger a release." \
             --base main \
             --head $BRANCH_NAME
