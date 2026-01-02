@@ -1,5 +1,5 @@
 {
-  "name": "@mars-ui/source",
+  "name": "@marskit/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -40,6 +40,10 @@
     "vitepress": "^2.0.0-alpha.15",
     "vitest": "^3.0.0",
     "vue": "^3.5.26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marskit/ui.git"
   },
   "workspaces": [
     "packages/*",
