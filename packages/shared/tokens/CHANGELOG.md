@@ -1,6 +1,6 @@
-# @mars-ui/tokens
+# @marskit/ui-tokens
 
-## 1.0.1
+## 1.0.0
 
 ### Patch Changes
 
