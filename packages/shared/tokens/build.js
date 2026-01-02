@@ -1,6 +1,11 @@
-const fs = require('fs');
-const path = require('path');
-const StyleDictionary = require('style-dictionary');
+import fs from 'fs';
+import path from 'path';
+import StyleDictionary from 'style-dictionary';
+import { fileURLToPath } from 'url';
+import sdConfig from './config.json' with { type: 'json' };
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Path to the source tokens file
 const tokensPath = path.resolve(__dirname, 'raw-tokens.json');
@@ -69,26 +74,12 @@ console.log('Splitting tokens...');
 writeTokens(tokens, outputDir);
 
 console.log('Running Style Dictionary...');
-const sdConfig = require('./config.json');
 
-// ADDED DEBUGGING
-StyleDictionary.registerFormat({
-    name: 'debug',
-    formatter: function ({ dictionary }) {
-        const output = dictionary.allTokens.map(token => {
-            return JSON.stringify({
-                path: token.path,
-                type: token.type,
-                value: token.value,
-                attributes: token.attributes,
-                original: token.original
-            }, null, 2);
-        }).join('\n');
-        return output;
-    }
-});
+const finalConfig = { ...sdConfig };
 
-sdConfig.platforms.debug = {
+finalConfig.platforms = finalConfig.platforms || {};
+
+finalConfig.platforms.debug = {
     transformGroup: 'android',
     buildPath: 'build/debug/',
     files: [{
@@ -97,49 +88,7 @@ sdConfig.platforms.debug = {
     }]
 };
 
-// Register custom filters
-StyleDictionary.registerFilter({
-    name: 'isColor',
-    matcher: function (token) {
-        return token.type === 'color';
-    }
-});
-
-StyleDictionary.registerFilter({
-    name: 'isDimension',
-    matcher: function (token) {
-        return token.type === 'dimension' || token.attributes.category === 'Font' || token.type === 'number'; // expanded for dimensions
-    }
-});
-
-// Custom Formatters
-StyleDictionary.registerFormat({
-    name: 'custom/android/colors',
-    formatter: function ({ dictionary }) {
-        return '<?xml version="1.0" encoding="UTF-8"?>\n' +
-            '<resources>\n' +
-            dictionary.allTokens.map(token => {
-                return `  <color name="${token.name}">${token.value}</color>`;
-            }).join('\n') +
-            '\n</resources>';
-    }
-});
-
-StyleDictionary.registerFormat({
-    name: 'custom/android/dimens',
-    formatter: function ({ dictionary }) {
-        return '<?xml version="1.0" encoding="UTF-8"?>\n' +
-            '<resources>\n' +
-            dictionary.allTokens.map(token => {
-                return `  <dimen name="${token.name}">${token.value}dp</dimen>`; // Assuming dp for now or use original unit
-            }).join('\n') +
-            '\n</resources>';
-    }
-});
-
-
-// Update Android config to use custom filters
-sdConfig.platforms.android = {
+finalConfig.platforms.android = {
     transformGroup: 'android',
     buildPath: 'build/android/',
     files: [{
@@ -153,7 +102,60 @@ sdConfig.platforms.android = {
     }]
 };
 
+const sdInstance = new StyleDictionary(finalConfig);
 
-const sd = StyleDictionary.extend(sdConfig);
-sd.buildAllPlatforms();
+sdInstance.registerFormat({
+    name: 'debug',
+    format: function ({ dictionary }) {
+        return dictionary.allTokens.map(token => {
+            return JSON.stringify({
+                path: token.path,
+                type: token.type,
+                value: token.value,
+                attributes: token.attributes,
+                original: token.original
+            }, null, 2);
+        }).join('\n');
+    }
+});
+
+sdInstance.registerFilter({
+    name: 'isColor',
+    filter: function (token) {
+        return token.type === 'color';
+    }
+});
+
+sdInstance.registerFilter({
+    name: 'isDimension',
+    filter: function (token) {
+        return token.type === 'dimension' || token.attributes.category === 'Font' || token.type === 'number';
+    }
+});
+
+sdInstance.registerFormat({
+    name: 'custom/android/colors',
+    format: function ({ dictionary }) {
+        return '<?xml version="1.0" encoding="UTF-8"?>\n' +
+            '<resources>\n' +
+            dictionary.allTokens.map(token => {
+                return `  <color name="${token.name}">${token.value}</color>`;
+            }).join('\n') +
+            '\n</resources>';
+    }
+});
+
+sdInstance.registerFormat({
+    name: 'custom/android/dimens',
+    format: function ({ dictionary }) {
+        return '<?xml version="1.0" encoding="UTF-8"?>\n' +
+            '<resources>\n' +
+            dictionary.allTokens.map(token => {
+                return `  <dimen name="${token.name}">${token.value}dp</dimen>`;
+            }).join('\n') +
+            '\n</resources>';
+    }
+});
+
+await sdInstance.buildAllPlatforms();
 console.log('Build completed!');
