@@ -4,13 +4,13 @@
   "files": [],
   "references": [
     {
-      "path": "./core"
-    },
-    {
-      "path": "./libs/core"
-    },
-    {
       "path": "./packages/libs/core"
+    },
+    {
+      "path": "./packages/apps/docs"
+    },
+    {
+      "path": "./packages/shared/tokens"
     }
   ]
 }
