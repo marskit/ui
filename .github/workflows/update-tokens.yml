@@ -44,9 +44,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Branch Name
-          BRANCH_NAME="chore/tokens-update-${{ github.run_id }}"
-          git checkout -b $BRANCH_NAME
+          # Ensure we are on the branch
+          git checkout tokens
 
           # Add Changeset
           bunx changeset add --empty
@@ -62,11 +61,11 @@ jobs:
           # Commit
           git add .
           git commit -m "chore: update design tokens"
-          git push origin $BRANCH_NAME
+          git push origin tokens
 
           # Create PR
           gh pr create \
             --title "chore: update design tokens" \
             --body "This PR updates the design tokens based on changes in the `tokens` branch. A changeset has been added to trigger a release." \
             --base main \
-            --head $BRANCH_NAME
+            --head tokens || echo "PR likely already exists"
