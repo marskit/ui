@@ -43,7 +43,9 @@
   },
   "workspaces": [
     "packages/*",
-    "packages/libs/*"
+    "packages/apps/*",
+    "packages/libs/*",
+    "packages/shared/*"
   ],
   "dependencies": {
     "@stencil/angular-output-target": "^1.1.1",
