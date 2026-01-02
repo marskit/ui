@@ -37,6 +37,7 @@ jobs:
           # This updates versions and changelogs, then commits back to main
           version: bunx changeset version
         env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # NPM_TOKEN is needed if publishing to NPM registry.
           # For now, we assume GITHUB_TOKEN is enough for GitHub Packages or just tagging.

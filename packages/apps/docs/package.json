@@ -1,10 +1,12 @@
 {
-  "name": "@mars-ui/docs",
+  "name": "@marskit/docs",
   "module": "index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@marskit/ui-tokens": "workspace:*",
+    "@marskit/ui-wc": "workspace:*"
   },
   "peerDependencies": {
     "typescript": "^5"
@@ -13,5 +15,10 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marskit/ui.git",
+    "directory": "packages/apps/docs"
   }
 }

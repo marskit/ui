@@ -1,7 +1,7 @@
 {
-  "name": "@mars-ui/core",
+  "name": "@marskit/ui-wc",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -12,7 +12,7 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "@mars-ui/source": "./src/index.ts",
+      "@marskit/source": "./src/index.ts",
       "types": "./dist/index.d.ts",
       "import": "./dist/core/core.esm.js",
       "require": "./dist/core/core.cjs.js",
@@ -47,8 +47,16 @@
     "jest-cli": "^29.7.0",
     "puppeteer": "^24.3.0"
   },
-  "peerDependencies": {
-    "@stencil/core": "^4.27.1"
+  "dependencies": {
+    "@marskit/ui-tokens": "workspace:*"
   },
-  "dependencies": {}
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marskit/ui.git",
+    "directory": "packages/libs/core"
+  }
 }
