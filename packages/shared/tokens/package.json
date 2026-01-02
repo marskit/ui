@@ -1,6 +1,6 @@
 {
     "name": "@mars-ui/tokens",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Design tokens for MarsUI",
     "main": "index.ts",
     "exports": {
@@ -17,5 +17,8 @@
     },
     "devDependencies": {
         "style-dictionary": "^5.1.1"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
     }
 }
