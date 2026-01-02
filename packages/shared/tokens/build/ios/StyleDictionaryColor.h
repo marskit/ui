@@ -3,13 +3,12 @@
 // StyleDictionaryColor.h
 //
 
-// Do not edit directly
-// Generated on Thu, 01 Jan 2026 13:16:03 GMT
+// Do not edit directly, this file was auto-generated.
 
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, ) {
+typedef NS_ENUM(NSInteger, StyleDictionaryColorName) {
 BrandMarsUi50,
 BrandMarsUi100,
 BrandMarsUi200,
@@ -382,7 +381,7 @@ KeyboardEmojiActiveBackground,
 KeyboardKeyShadow
 };
 
-@interface  : NSObject
+@interface StyleDictionaryColor : NSObject
 + (NSArray *)values;
-+ (UIColor *)color:()color;
++ (UIColor *)color:(StyleDictionaryColorName)color;
 @end
