@@ -1,0 +1,32 @@
+{
+    "name": "docs",
+    "sourceRoot": "packages/apps/docs",
+    "projectType": "application",
+    "targets": {
+        "serve": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "vitepress dev apps/docs",
+                "cwd": "packages/"
+            }
+        },
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "vitepress build apps/docs",
+                "cwd": "packages/",
+                "outputPath": "dist/apps/docs"
+            },
+            "outputs": [
+                "{options.outputPath}"
+            ]
+        },
+        "preview": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "vitepress preview apps/docs",
+                "cwd": "packages/"
+            }
+        }
+    }
+}

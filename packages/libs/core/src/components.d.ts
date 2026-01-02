@@ -37,15 +37,15 @@ declare namespace LocalJSX {
         /**
           * The first name
          */
-        "first"?: string;
+        "first": string;
         /**
           * The last name
          */
-        "last"?: string;
+        "last": string;
         /**
           * The middle name
          */
-        "middle"?: string;
+        "middle": string;
     }
     interface IntrinsicElements {
         "my-component": MyComponent;

@@ -3,8 +3,9 @@
   "files": [],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
+    "allowJs": true,
     "allowUnreachableCode": false,
-    "declaration": false,
+    "emitDeclarationOnly": false,
     "experimentalDecorators": true,
     "lib": [
       "dom",
@@ -23,14 +24,11 @@
     "src"
   ],
   "exclude": [
-    "node_modules"
-  ],
-  "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
+    "node_modules",
+    "**/*.e2e.ts",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx"
   ]
 }
